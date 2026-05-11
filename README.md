@@ -2,7 +2,7 @@
 
 Landing page for the Hotely.ai QR cavaliere offer for short-term rentals.
 
-**Offer:** Pay $9.99 once → unlock the step-by-step tutorial + get the physical QR cavaliere shipped free + first month included. Then $9.99/month, cancel anytime.
+**Offer:** $19.99 / year per apartment + shipping → unlock the step-by-step tutorial + get the custom-branded QR cavaliere (your logo printed) shipped to your door. Renews yearly, cancel anytime.
 
 ## Live preview
 
@@ -24,9 +24,11 @@ In `index.html`, search for `CHECKOUT_URL` and replace the placeholder with your
 const CHECKOUT_URL = 'https://buy.stripe.com/REPLACE_ME';
 ```
 
-On the Stripe Payment Link, enable:
+On the Stripe Payment Link, configure:
 
+- **Annual recurring price** of $19.99
 - **Collect shipping address** (we need it for the cavaliere)
+- **Shipping rates** per country (Stripe shipping rates)
 - A custom field for the logo upload, or redirect to a post-success page that collects it
 
 ## Brand
