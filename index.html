@@ -404,51 +404,63 @@
 <!-- ============== "AS SEEN IN THE REEL" ============== -->
 <section class="py-20 lg:py-24 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-    <div class="relative mx-auto max-w-[280px] reveal">
-      <div class="reel-frame relative rounded-[2rem] bg-gradient-to-br from-amber-100 via-rose-50 to-amber-50 border border-gray-200 overflow-hidden shadow-2xl">
-        <div class="absolute top-3 left-3 right-3 flex items-center justify-between text-[10px] text-gray-700 z-10">
-          <span class="px-2 py-0.5 rounded-full bg-white/70 backdrop-blur font-semibold">For You</span>
-          <span class="px-2 py-0.5 rounded-full bg-white/70 backdrop-blur">●●●</span>
-        </div>
+    <div class="relative reveal">
+      <!-- Two influencer reels, staggered -->
+      <div class="relative mx-auto max-w-md grid grid-cols-2 gap-4 sm:gap-5">
 
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="relative w-40 h-52 rounded-2xl bg-gradient-to-br from-white to-surface border border-primary/10 shadow-xl rotate-[-4deg]">
-            <div class="absolute top-0 inset-x-0 h-7 animated-gradient flex items-center justify-center text-white text-[11px] font-bold tracking-tight rounded-t-2xl">
-              Hotely<span class="text-white/80">.ai</span>
-            </div>
-            <div class="absolute top-9 left-1/2 -translate-x-1/2 w-28 h-28 bg-white rounded-lg p-1.5 shadow">
-              <svg viewBox="0 0 40 40" class="w-full h-full">
-                <rect width="40" height="40" fill="white"/>
-                <g fill="#1f2937">
-                  <rect x="2" y="2" width="10" height="10" rx="2"/><rect x="4" y="4" width="6" height="6" fill="white"/><rect x="5" y="5" width="4" height="4"/>
-                  <rect x="28" y="2" width="10" height="10" rx="2"/><rect x="30" y="4" width="6" height="6" fill="white"/><rect x="31" y="5" width="4" height="4"/>
-                  <rect x="2" y="28" width="10" height="10" rx="2"/><rect x="4" y="30" width="6" height="6" fill="white"/><rect x="5" y="31" width="4" height="4"/>
-                  <rect x="14" y="4" width="2" height="2"/><rect x="18" y="4" width="2" height="2"/><rect x="22" y="4" width="2" height="2"/>
-                  <rect x="14" y="14" width="2" height="2"/><rect x="20" y="14" width="2" height="2"/><rect x="26" y="14" width="2" height="2"/>
-                  <rect x="14" y="22" width="2" height="2"/><rect x="22" y="22" width="2" height="2"/><rect x="28" y="22" width="2" height="2"/>
-                  <rect x="14" y="28" width="2" height="2"/><rect x="20" y="28" width="2" height="2"/><rect x="26" y="28" width="2" height="2"/>
-                </g>
-              </svg>
-            </div>
-            <p class="absolute bottom-2 inset-x-0 text-center text-[9px] uppercase tracking-widest text-gray-500">Scan me</p>
+        <!-- Reel 1 -->
+        <a href="#" class="block relative rounded-[1.5rem] overflow-hidden shadow-2xl rotate-[-3deg] hover:rotate-0 transition-transform duration-500 reel-frame bg-gray-200 group">
+          <img src="images/influencer-1.jpg" alt="Creator showing the Hotely QR cavaliere" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+          <!-- Top bar -->
+          <div class="absolute top-2 left-2 right-2 flex items-center justify-between text-[9px] text-white z-10">
+            <span class="px-2 py-0.5 rounded-full bg-black/40 backdrop-blur font-semibold">For You</span>
+            <span class="px-2 py-0.5 rounded-full bg-black/40 backdrop-blur">●●●</span>
           </div>
-        </div>
-
-        <div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/70 to-transparent text-white">
-          <p class="text-[11px] font-semibold">@thecreatorhost</p>
-          <p class="text-[11px] leading-tight mt-1 opacity-95">"If you rent out apartments, you need to put this in. Hotely. Look it up — trust me."</p>
-          <div class="flex items-center gap-2 mt-2 text-[10px] opacity-80">
-            <span>♥ 24.1k</span><span>💬 612</span><span>↗ 1.4k</span>
+          <!-- Caption overlay -->
+          <div class="absolute bottom-0 inset-x-0 p-2.5 bg-gradient-to-t from-black/85 via-black/50 to-transparent text-white">
+            <p class="text-[10px] font-semibold opacity-95">@thecreatorhost</p>
+            <p class="text-[10px] leading-tight mt-0.5 opacity-90">"No way… it's here again."</p>
+            <div class="flex items-center gap-1.5 mt-1.5 text-[9px] opacity-80">
+              <span>♥ 24.1k</span><span>💬 612</span>
+            </div>
           </div>
-        </div>
+          <!-- Play -->
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/85 backdrop-blur flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+            <svg class="w-4 h-4 ml-0.5 text-gray-900" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </a>
 
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white/85 backdrop-blur flex items-center justify-center shadow-lg">
-          <svg class="w-6 h-6 ml-1 text-gray-900" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-        </div>
+        <!-- Reel 2 -->
+        <a href="#" class="block relative rounded-[1.5rem] overflow-hidden shadow-2xl rotate-[3deg] hover:rotate-0 transition-transform duration-500 reel-frame bg-gray-200 mt-8 group">
+          <img src="images/influencer-2.jpg" alt="Creator showing the Hotely QR cavaliere on the table" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+          <div class="absolute top-2 left-2 right-2 flex items-center justify-between text-[9px] text-white z-10">
+            <span class="px-2 py-0.5 rounded-full bg-black/40 backdrop-blur font-semibold">For You</span>
+            <span class="px-2 py-0.5 rounded-full bg-black/40 backdrop-blur">●●●</span>
+          </div>
+          <div class="absolute bottom-0 inset-x-0 p-2.5 bg-gradient-to-t from-black/85 via-black/50 to-transparent text-white">
+            <p class="text-[10px] font-semibold opacity-95">@hostlifedaily</p>
+            <p class="text-[10px] leading-tight mt-0.5 opacity-90">"Trust me, you need this one."</p>
+            <div class="flex items-center gap-1.5 mt-1.5 text-[9px] opacity-80">
+              <span>♥ 18.7k</span><span>💬 401</span>
+            </div>
+          </div>
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/85 backdrop-blur flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+            <svg class="w-4 h-4 ml-0.5 text-gray-900" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </a>
+
+        <!-- Tape labels -->
+        <span class="tape -top-3 -left-1 z-10">Reel · 0:24</span>
+        <span class="tape -bottom-3 right-2 rotate-2 z-10">As featured</span>
       </div>
 
-      <span class="tape -top-3 left-6">Reel · 0:24</span>
-      <span class="tape -bottom-2 right-4 rotate-2">As featured</span>
+      <!-- Small caption under the two reels -->
+      <p class="mt-5 text-center text-xs text-gray-500">
+        <span class="inline-flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Real creators · real Hotely cavalieri · real reels
+        </span>
+      </p>
     </div>
 
     <div>
