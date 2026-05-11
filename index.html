@@ -1,0 +1,1276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Hotely.ai — The QR cavaliere from the video. $9.99.</title>
+<meta name="description" content="The exact QR cavaliere you saw on Instagram & TikTok. Pay $9.99 once, get the step-by-step tutorial and your cavaliere shipped free. Then $9.99/month, cancel anytime." />
+<meta property="og:title" content="The Hotely QR you saw in the video. $9.99 to start." />
+<meta property="og:description" content="Pay $9.99, watch the step-by-step tutorial, get your physical cavaliere shipped free. Then $9.99/month, cancel anytime." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#6C3AED" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Inter','ui-sans-serif','system-ui','sans-serif'] },
+        colors: {
+          primary:        '#6C3AED',
+          'primary-light':'#8B5CF6',
+          'primary-dark': '#5B21B6',
+          accent:         '#06B6D4',
+          'accent-light': '#22D3EE',
+          surface:        '#F8F6FF',
+          'surface-dark': '#EDE9FE'
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+  /* ===== Brand utilities ===== */
+  .gradient-text {
+    background: linear-gradient(135deg, #6C3AED 0%, #06B6D4 100%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  @keyframes shimmer-sweep { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
+  .gradient-text-shimmer {
+    background: linear-gradient(90deg,#6C3AED 0%,#06B6D4 25%,#8B5CF6 50%,#22D3EE 75%,#6C3AED 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    animation: shimmer-sweep 12s linear infinite;
+  }
+  @keyframes gradient-shift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+  .animated-gradient {
+    background: linear-gradient(-45deg,#6C3AED,#8B5CF6,#06B6D4,#22D3EE);
+    background-size: 400% 400%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  .glass { background: rgba(255,255,255,.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,.3); }
+  .aurora-glass {
+    background: rgba(255,255,255,.7);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,.3);
+    box-shadow: 0 0 40px rgba(108,58,237,.03), 0 0 80px rgba(6,182,212,.03);
+  }
+
+  @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+  .animate-float { animation: float 6s ease-in-out infinite; }
+  .animate-float-delayed { animation: float 6s ease-in-out 2s infinite; }
+
+  @keyframes pulse-glow { 0%,100% { box-shadow: 0 0 20px rgba(108,58,237,.3); } 50% { box-shadow: 0 0 40px rgba(108,58,237,.6); } }
+  .pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+
+  @keyframes aurora-flow {
+    0% { transform: translateX(-25%) translateY(-10%) rotate(-5deg); }
+    25% { transform: translateX(5%) translateY(5%) rotate(3deg); }
+    50% { transform: translateX(25%) translateY(-5%) rotate(-3deg); }
+    75% { transform: translateX(-5%) translateY(10%) rotate(5deg); }
+    100% { transform: translateX(-25%) translateY(-10%) rotate(-5deg); }
+  }
+  @keyframes aurora-flow-reverse {
+    0% { transform: translateX(25%) translateY(10%) rotate(5deg); }
+    50% { transform: translateX(-25%) translateY(5%) rotate(3deg); }
+    100% { transform: translateX(25%) translateY(10%) rotate(5deg); }
+  }
+  .aurora-blob-1 { position:absolute; width:60%; height:60%; left:-10%; top:-10%; background: radial-gradient(closest-side, rgba(108,58,237,.35), transparent 70%); filter: blur(60px); animation: aurora-flow 22s ease-in-out infinite; }
+  .aurora-blob-2 { position:absolute; width:55%; height:55%; right:-10%; top:10%; background: radial-gradient(closest-side, rgba(6,182,212,.30), transparent 70%); filter: blur(60px); animation: aurora-flow-reverse 26s ease-in-out infinite; }
+  .aurora-blob-3 { position:absolute; width:50%; height:50%; left:20%; bottom:-15%; background: radial-gradient(closest-side, rgba(139,92,246,.25), transparent 70%); filter: blur(60px); animation: aurora-flow 28s ease-in-out infinite reverse; }
+
+  @keyframes twinkle { 0%,100% { opacity:.2; transform: scale(.8);} 50% { opacity:1; transform: scale(1.2);} }
+  .star { position:absolute; width:2px; height:2px; background:#fff; border-radius:50%; animation: twinkle var(--d,3s) ease-in-out var(--del,0s) infinite; }
+  .star-accent  { background:#22D3EE; box-shadow: 0 0 6px #22D3EE; }
+  .star-primary { background:#8B5CF6; box-shadow: 0 0 6px #8B5CF6; }
+
+  .qr-shine { position:relative; overflow:hidden; }
+  .qr-shine::after {
+    content:''; position:absolute; inset:0; border-radius:inherit;
+    background: linear-gradient(135deg, transparent 30%, rgba(255,255,255,.55) 50%, transparent 70%);
+    transform: translateX(-100%); animation: shine 4.5s ease-in-out infinite;
+  }
+  @keyframes shine { 0%,40%{ transform: translateX(-100%); } 60%,100% { transform: translateX(100%); } }
+
+  @keyframes badge-glow-pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(108,58,237,0); } 50% { box-shadow: 0 0 12px 2px rgba(108,58,237,.10); } }
+  .trust-badge-glow { animation: badge-glow-pulse 3s ease-in-out infinite; }
+
+  .cosmic-card-hover { position: relative; border: 1px solid #e5e7eb; transition: border-color .5s ease; background: white; }
+  .cosmic-card-hover:hover { border-color: transparent; }
+  .cosmic-card-hover::before {
+    content: ''; position: absolute; inset: -1px; border-radius: inherit; padding: 1px;
+    background: linear-gradient(90deg,#6C3AED 0%,#06B6D4 25%,#8B5CF6 50%,#22D3EE 75%,#6C3AED 100%);
+    background-size: 200% auto; z-index: -1; opacity: 0; transition: opacity .5s ease;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude;
+  }
+  .cosmic-card-hover:hover::before { opacity: 1; animation: shimmer-sweep 8s linear infinite; }
+
+  .marquee { display:flex; overflow:hidden; mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
+  .marquee__track { display:flex; gap:3rem; padding-right:3rem; animation: scroll 40s linear infinite; flex-shrink:0; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+
+  .reveal { opacity:0; transform: translateY(20px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity:1; transform:none; }
+
+  @keyframes spin-slow { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+  .stamp-rotate { animation: spin-slow 22s linear infinite; transform-origin: center; }
+
+  /* Cavaliere shape */
+  .cavaliere {
+    position: relative;
+    width: 220px; height: 280px;
+    transform-style: preserve-3d;
+    perspective: 800px;
+  }
+  .cavaliere__face {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f5f3ff 100%);
+    border-radius: 18px 18px 6px 6px;
+    box-shadow:
+      0 30px 60px -20px rgba(108,58,237,.35),
+      0 10px 30px -10px rgba(6,182,212,.25),
+      inset 0 1px 0 rgba(255,255,255,.8),
+      inset 0 -1px 0 rgba(0,0,0,.04);
+    border: 1px solid rgba(108,58,237,.12);
+    overflow: hidden;
+  }
+  .cavaliere__base {
+    position: absolute; left: -18px; right: -18px; bottom: -10px; height: 14px;
+    background: linear-gradient(180deg, rgba(31,41,55,.85), rgba(31,41,55,.6));
+    border-radius: 50%; filter: blur(8px); opacity:.45;
+  }
+
+  .tape {
+    position:absolute; padding: 2px 10px; font-size:10px; font-weight:700; letter-spacing:.18em; text-transform:uppercase;
+    background: rgba(255, 235, 59, .55); color:#444; transform: rotate(-3deg);
+    box-shadow: 0 1px 0 rgba(0,0,0,.05);
+  }
+
+  .reel-frame { aspect-ratio: 9 / 16; }
+</style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+<!-- ============== ANNOUNCEMENT BAR ============== -->
+<div class="animated-gradient text-white text-sm">
+  <div class="max-w-7xl mx-auto px-5 py-2.5 flex items-center justify-center gap-2 text-center">
+    <span class="inline-block w-2 h-2 rounded-full bg-white/90 animate-pulse"></span>
+    <span class="opacity-95">$9.99 today = tutorial unlocked + your <b>physical QR cavaliere shipped free worldwide</b>.</span>
+    <a href="#checkout" class="hidden sm:inline-block ml-2 underline underline-offset-4 decoration-white/70 hover:opacity-90">Get yours →</a>
+  </div>
+</div>
+
+<!-- ============== NAVBAR ============== -->
+<header class="sticky top-0 z-40 aurora-glass">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 lg:h-20 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-1">
+      <span class="text-2xl font-bold tracking-tight text-gray-900">Hotely</span>
+      <span class="text-2xl font-bold gradient-text">.ai</span>
+    </a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="#how" class="text-sm font-medium text-gray-700 hover:text-primary transition-colors">How it works</a>
+      <a href="#tutorial" class="text-sm font-medium text-gray-700 hover:text-primary transition-colors">The tutorial</a>
+      <a href="#features" class="text-sm font-medium text-gray-700 hover:text-primary transition-colors">Features</a>
+      <a href="#pricing" class="text-sm font-medium text-gray-700 hover:text-primary transition-colors">Pricing</a>
+      <a href="#faq" class="text-sm font-medium text-gray-700 hover:text-primary transition-colors">FAQ</a>
+    </div>
+    <a href="#checkout" class="animated-gradient text-white text-sm font-semibold px-6 py-2.5 rounded-full hover:shadow-lg hover:shadow-primary/25 transition-shadow">
+      Get yours · $9.99
+    </a>
+  </nav>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="relative overflow-hidden pt-12 lg:pt-20 pb-20 lg:pb-28">
+  <div class="absolute inset-0 bg-gradient-to-br from-surface via-white to-surface"></div>
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="aurora-blob-1"></div>
+    <div class="aurora-blob-2"></div>
+    <div class="aurora-blob-3"></div>
+  </div>
+  <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4"></div>
+  <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4"></div>
+  <div id="starfield-hero" class="absolute inset-0 pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <!-- Left -->
+      <div>
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+          <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          <span>You found us from the video. Welcome 👋</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+          Yes — it's<br/>
+          <span class="gradient-text-shimmer">this exact thing</span><br/>
+          on her table.
+        </h1>
+
+        <p class="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
+          The little QR <i>cavaliere</i> you saw in the reel: Wi-Fi, restaurants, local experiences,
+          all behind one scan. Pay <b class="text-gray-900">$9.99 once</b> and you get the step-by-step
+          video tutorial <b>+ the physical cavaliere shipped to your door</b>. Then $9.99/month —
+          cancel anytime, no commitment.
+        </p>
+
+        <!-- Primary CTA -->
+        <div class="mt-8 max-w-xl">
+          <a href="#checkout" class="group block animated-gradient text-white font-semibold rounded-2xl px-7 py-5 hover:shadow-2xl hover:shadow-primary/30 transition-all hover:scale-[1.01]">
+            <div class="flex items-center justify-between gap-4">
+              <div class="text-left">
+                <div class="text-xs uppercase tracking-widest opacity-90">One-time today</div>
+                <div class="text-2xl sm:text-3xl font-extrabold tracking-tight">Pay $9.99 &amp; ship my cavaliere</div>
+                <div class="text-sm opacity-90 mt-1">Then $9.99/month · cancel anytime</div>
+              </div>
+              <span class="hidden sm:inline-flex w-12 h-12 rounded-full bg-white/20 backdrop-blur items-center justify-center text-2xl shrink-0 group-hover:translate-x-1 transition">→</span>
+            </div>
+          </a>
+
+          <!-- Shipping address callout -->
+          <div class="mt-4 flex items-start gap-3 text-sm text-gray-700 p-4 rounded-2xl border border-primary/15 bg-primary/5">
+            <span class="inline-flex shrink-0 items-center justify-center w-9 h-9 rounded-full bg-white text-primary shadow-sm">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <p>
+              <b class="text-gray-900">Heads up:</b> at checkout you'll enter the address where we
+              should ship your cavaliere <b class="text-gray-900">and upload your logo</b> — we print
+              it on the cavaliere next to the QR. Shipping is included.
+            </p>
+          </div>
+        </div>
+
+        <!-- Trust pills -->
+        <div class="mt-8 flex flex-wrap items-center gap-2.5 sm:gap-3 text-xs sm:text-sm text-gray-500">
+          <div class="trust-badge-glow flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/60 backdrop-blur-sm border border-gray-100">
+            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Step-by-step video tutorial
+          </div>
+          <div class="trust-badge-glow flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/60 backdrop-blur-sm border border-gray-100">
+            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            QR cavaliere shipped free
+          </div>
+          <div class="trust-badge-glow flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/60 backdrop-blur-sm border border-gray-100">
+            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Cancel anytime
+          </div>
+        </div>
+
+        <!-- Social proof -->
+        <div class="mt-10 flex items-center gap-5">
+          <div class="flex -space-x-3">
+            <div class="w-10 h-10 rounded-full animated-gradient border-2 border-white"></div>
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-accent-light border-2 border-white"></div>
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary-light border-2 border-white"></div>
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary-light to-accent border-2 border-white"></div>
+            <div class="w-10 h-10 rounded-full bg-white text-gray-900 text-xs font-bold flex items-center justify-center border-2 border-white shadow-sm">+1.2k</div>
+          </div>
+          <div>
+            <div class="flex items-center gap-1 text-yellow-400">
+              ★★★★★ <span class="text-gray-900 text-sm font-semibold ml-1">4.9/5</span>
+            </div>
+            <p class="text-xs text-gray-500">from 1,200+ hosts in 38 countries</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Cavaliere on a table -->
+      <div class="relative">
+        <div class="relative mx-auto max-w-md">
+          <div class="absolute inset-x-[-8%] bottom-[-2%] h-32 rounded-[40%] bg-gradient-to-b from-amber-200/60 to-amber-300/30 blur-2xl"></div>
+          <div class="relative pt-8 pb-12 flex items-end justify-center gap-6">
+
+            <div class="relative w-14 h-16 self-end animate-float-delayed">
+              <div class="absolute bottom-0 left-0 right-0 h-12 bg-white rounded-b-2xl rounded-t-md shadow-lg"></div>
+              <div class="absolute bottom-1 left-1 right-1 top-2 bg-gradient-to-b from-amber-700 via-amber-800 to-amber-900 rounded-b-xl"></div>
+              <div class="absolute -right-2 top-4 w-3 h-6 border-2 border-white rounded-r-full"></div>
+              <div class="absolute -top-3 left-1 w-12 h-3 rounded-full bg-amber-100/80 blur-[2px]"></div>
+            </div>
+
+            <div class="cavaliere animate-float">
+              <div class="cavaliere__face qr-shine">
+                <div class="absolute top-0 inset-x-0 h-9 animated-gradient flex items-center justify-center">
+                  <span class="text-white font-bold text-sm tracking-tight">Hotely<span class="text-white/80">.ai</span></span>
+                </div>
+                <div class="absolute top-12 left-1/2 -translate-x-1/2 w-[150px] h-[150px] bg-white rounded-xl p-2 shadow-md">
+                  <svg viewBox="0 0 100 100" class="w-full h-full">
+                    <rect width="100" height="100" fill="white"/>
+                    <g fill="#1f2937">
+                      <rect x="6" y="6" width="22" height="22" rx="3"/><rect x="11" y="11" width="12" height="12" rx="1.5" fill="white"/><rect x="14" y="14" width="6" height="6" rx="0.5"/>
+                      <rect x="72" y="6" width="22" height="22" rx="3"/><rect x="77" y="11" width="12" height="12" rx="1.5" fill="white"/><rect x="80" y="14" width="6" height="6" rx="0.5"/>
+                      <rect x="6" y="72" width="22" height="22" rx="3"/><rect x="11" y="77" width="12" height="12" rx="1.5" fill="white"/><rect x="14" y="80" width="6" height="6" rx="0.5"/>
+                      <rect x="34" y="8" width="4" height="4"/><rect x="42" y="8" width="4" height="4"/><rect x="54" y="8" width="4" height="4"/><rect x="62" y="8" width="4" height="4"/>
+                      <rect x="34" y="16" width="4" height="4"/><rect x="46" y="16" width="4" height="4"/><rect x="58" y="16" width="4" height="4"/>
+                      <rect x="38" y="24" width="4" height="4"/><rect x="50" y="24" width="4" height="4"/><rect x="62" y="24" width="4" height="4"/>
+                      <rect x="8" y="34" width="4" height="4"/><rect x="20" y="34" width="4" height="4"/><rect x="34" y="34" width="4" height="4"/><rect x="46" y="34" width="4" height="4"/><rect x="62" y="34" width="4" height="4"/><rect x="74" y="34" width="4" height="4"/><rect x="86" y="34" width="4" height="4"/>
+                      <rect x="14" y="42" width="4" height="4"/><rect x="26" y="42" width="4" height="4"/><rect x="38" y="42" width="4" height="4"/><rect x="54" y="42" width="4" height="4"/><rect x="70" y="42" width="4" height="4"/><rect x="82" y="42" width="4" height="4"/>
+                      <rect x="8" y="50" width="4" height="4"/><rect x="22" y="50" width="4" height="4"/><rect x="34" y="50" width="4" height="4"/><rect x="50" y="50" width="4" height="4"/><rect x="66" y="50" width="4" height="4"/><rect x="78" y="50" width="4" height="4"/><rect x="90" y="50" width="4" height="4"/>
+                      <rect x="16" y="58" width="4" height="4"/><rect x="30" y="58" width="4" height="4"/><rect x="42" y="58" width="4" height="4"/><rect x="58" y="58" width="4" height="4"/><rect x="74" y="58" width="4" height="4"/><rect x="86" y="58" width="4" height="4"/>
+                      <rect x="34" y="74" width="4" height="4"/><rect x="46" y="74" width="4" height="4"/><rect x="58" y="74" width="4" height="4"/><rect x="70" y="74" width="4" height="4"/><rect x="82" y="74" width="4" height="4"/>
+                      <rect x="38" y="82" width="4" height="4"/><rect x="50" y="82" width="4" height="4"/><rect x="62" y="82" width="4" height="4"/><rect x="74" y="82" width="4" height="4"/>
+                      <rect x="34" y="90" width="4" height="4"/><rect x="42" y="90" width="4" height="4"/><rect x="58" y="90" width="4" height="4"/><rect x="70" y="90" width="4" height="4"/><rect x="86" y="90" width="4" height="4"/>
+                    </g>
+                    <defs>
+                      <linearGradient id="qrLogo" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#6C3AED"/><stop offset="100%" stop-color="#06B6D4"/>
+                      </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="9" fill="url(#qrLogo)"/>
+                    <text x="50" y="54" text-anchor="middle" font-size="10" font-weight="900" fill="white" font-family="Inter">H</text>
+                  </svg>
+                </div>
+                <div class="absolute bottom-3 inset-x-0 text-center">
+                  <p class="text-[10px] uppercase tracking-[0.18em] text-gray-500">Scan me</p>
+                  <p class="text-xs font-semibold text-gray-800 mt-0.5">Wi-Fi · Eat · Experiences</p>
+                </div>
+              </div>
+              <div class="cavaliere__base"></div>
+            </div>
+
+            <div class="self-end animate-float-delayed">
+              <svg viewBox="0 0 60 80" class="w-12 h-16 drop-shadow">
+                <circle cx="30" cy="20" r="14" fill="none" stroke="#a16207" stroke-width="4"/>
+                <rect x="28" y="34" width="4" height="34" fill="#ca8a04" rx="1"/>
+                <rect x="32" y="50" width="6" height="3" fill="#ca8a04"/>
+                <rect x="32" y="56" width="6" height="3" fill="#ca8a04"/>
+              </svg>
+            </div>
+
+          </div>
+
+          <!-- "Free shipping" rotating stamp -->
+          <div class="absolute -top-6 -right-2 z-20">
+            <div class="relative w-24 h-24">
+              <svg viewBox="0 0 96 96" class="absolute inset-0 stamp-rotate text-primary">
+                <defs>
+                  <path id="stampRing" d="M 48,48 m -36,0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0"/>
+                </defs>
+                <text font-size="9.5" font-weight="800" fill="currentColor" letter-spacing="1.5">
+                  <textPath href="#stampRing">CAVALIERE INCLUDED · SHIPPED FREE · </textPath>
+                </text>
+              </svg>
+              <div class="absolute inset-3 rounded-full animated-gradient text-white flex items-center justify-center text-2xl shadow-lg">
+                📦
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute right-0 top-1/2 w-24 h-44 rounded-2xl bg-gray-800 border border-gray-700 shadow-xl rotate-12 -translate-y-1/2 translate-x-6 hidden md:block">
+            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-10 h-1 rounded-full bg-gray-700"></div>
+          </div>
+
+        </div>
+
+        <div class="mt-8 mx-auto glass rounded-2xl px-4 py-3 max-w-[280px] shadow-xl text-center">
+          <p class="text-[10px] font-bold uppercase gradient-text">+€840 / month</p>
+          <p class="text-xs leading-tight text-gray-700 mt-0.5">avg extra revenue from experience commissions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative mt-16 border-t border-gray-100 pt-10">
+    <p class="text-center text-xs text-gray-400 uppercase tracking-widest mb-5">Hosts on every major platform trust us</p>
+    <div class="marquee">
+      <div class="marquee__track text-gray-300 text-xl font-bold tracking-tight">
+        <span>airbnb</span><span class="text-primary/30">•</span>
+        <span>booking.com</span><span class="text-primary/30">•</span>
+        <span>vrbo</span><span class="text-primary/30">•</span>
+        <span>expedia</span><span class="text-primary/30">•</span>
+        <span>hostfully</span><span class="text-primary/30">•</span>
+        <span>guesty</span><span class="text-primary/30">•</span>
+        <span>smoobu</span><span class="text-primary/30">•</span>
+        <span>lodgify</span><span class="text-primary/30">•</span>
+      </div>
+      <div class="marquee__track text-gray-300 text-xl font-bold tracking-tight" aria-hidden="true">
+        <span>airbnb</span><span class="text-primary/30">•</span>
+        <span>booking.com</span><span class="text-primary/30">•</span>
+        <span>vrbo</span><span class="text-primary/30">•</span>
+        <span>expedia</span><span class="text-primary/30">•</span>
+        <span>hostfully</span><span class="text-primary/30">•</span>
+        <span>guesty</span><span class="text-primary/30">•</span>
+        <span>smoobu</span><span class="text-primary/30">•</span>
+        <span>lodgify</span><span class="text-primary/30">•</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== "AS SEEN IN THE REEL" ============== -->
+<section class="py-20 lg:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div class="relative mx-auto max-w-[280px] reveal">
+      <div class="reel-frame relative rounded-[2rem] bg-gradient-to-br from-amber-100 via-rose-50 to-amber-50 border border-gray-200 overflow-hidden shadow-2xl">
+        <div class="absolute top-3 left-3 right-3 flex items-center justify-between text-[10px] text-gray-700 z-10">
+          <span class="px-2 py-0.5 rounded-full bg-white/70 backdrop-blur font-semibold">For You</span>
+          <span class="px-2 py-0.5 rounded-full bg-white/70 backdrop-blur">●●●</span>
+        </div>
+
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="relative w-40 h-52 rounded-2xl bg-gradient-to-br from-white to-surface border border-primary/10 shadow-xl rotate-[-4deg]">
+            <div class="absolute top-0 inset-x-0 h-7 animated-gradient flex items-center justify-center text-white text-[11px] font-bold tracking-tight rounded-t-2xl">
+              Hotely<span class="text-white/80">.ai</span>
+            </div>
+            <div class="absolute top-9 left-1/2 -translate-x-1/2 w-28 h-28 bg-white rounded-lg p-1.5 shadow">
+              <svg viewBox="0 0 40 40" class="w-full h-full">
+                <rect width="40" height="40" fill="white"/>
+                <g fill="#1f2937">
+                  <rect x="2" y="2" width="10" height="10" rx="2"/><rect x="4" y="4" width="6" height="6" fill="white"/><rect x="5" y="5" width="4" height="4"/>
+                  <rect x="28" y="2" width="10" height="10" rx="2"/><rect x="30" y="4" width="6" height="6" fill="white"/><rect x="31" y="5" width="4" height="4"/>
+                  <rect x="2" y="28" width="10" height="10" rx="2"/><rect x="4" y="30" width="6" height="6" fill="white"/><rect x="5" y="31" width="4" height="4"/>
+                  <rect x="14" y="4" width="2" height="2"/><rect x="18" y="4" width="2" height="2"/><rect x="22" y="4" width="2" height="2"/>
+                  <rect x="14" y="14" width="2" height="2"/><rect x="20" y="14" width="2" height="2"/><rect x="26" y="14" width="2" height="2"/>
+                  <rect x="14" y="22" width="2" height="2"/><rect x="22" y="22" width="2" height="2"/><rect x="28" y="22" width="2" height="2"/>
+                  <rect x="14" y="28" width="2" height="2"/><rect x="20" y="28" width="2" height="2"/><rect x="26" y="28" width="2" height="2"/>
+                </g>
+              </svg>
+            </div>
+            <p class="absolute bottom-2 inset-x-0 text-center text-[9px] uppercase tracking-widest text-gray-500">Scan me</p>
+          </div>
+        </div>
+
+        <div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/70 to-transparent text-white">
+          <p class="text-[11px] font-semibold">@thecreatorhost</p>
+          <p class="text-[11px] leading-tight mt-1 opacity-95">"If you rent out apartments, you need to put this in. Hotely. Look it up — trust me."</p>
+          <div class="flex items-center gap-2 mt-2 text-[10px] opacity-80">
+            <span>♥ 24.1k</span><span>💬 612</span><span>↗ 1.4k</span>
+          </div>
+        </div>
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white/85 backdrop-blur flex items-center justify-center shadow-lg">
+          <svg class="w-6 h-6 ml-1 text-gray-900" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+
+      <span class="tape -top-3 left-6">Reel · 0:24</span>
+      <span class="tape -bottom-2 right-4 rotate-2">As featured</span>
+    </div>
+
+    <div>
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-5 reveal">
+        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        From the reel to your apartment
+      </div>
+      <h2 class="text-4xl sm:text-5xl font-bold leading-tight tracking-tight reveal">
+        That tiny <span class="gradient-text-shimmer">cavaliere</span> is doing<br/>
+        a host's whole job.
+      </h2>
+      <p class="mt-6 text-lg text-gray-600 leading-relaxed reveal">
+        In the video she sets it on the wooden table, smiles, and says it: Wi-Fi, restaurants,
+        local experiences — all in one scan. We didn't fake it. <b>That's literally the product</b>,
+        and it's $9.99 to start.
+      </p>
+
+      <ul class="mt-7 space-y-3 text-gray-800 reveal">
+        <li class="flex gap-3 items-start">
+          <span class="mt-0.5 inline-flex w-6 h-6 rounded-full bg-primary/10 text-primary items-center justify-center text-sm font-bold">1</span>
+          <span><b>Pay $9.99 once.</b> Stripe checkout — Apple Pay or Google Pay, ~30 seconds.</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="mt-0.5 inline-flex w-6 h-6 rounded-full bg-primary/10 text-primary items-center justify-center text-sm font-bold">2</span>
+          <span><b>Enter your shipping address &amp; upload your logo</b> at checkout — we print your logo on the cavaliere right next to the QR. Shipping is included.</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="mt-0.5 inline-flex w-6 h-6 rounded-full bg-primary/10 text-primary items-center justify-center text-sm font-bold">3</span>
+          <span><b>Tutorial unlocks instantly</b> in your inbox + dashboard. Build your AI agent in 15 minutes flat.</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="mt-0.5 inline-flex w-6 h-6 rounded-full bg-primary/10 text-primary items-center justify-center text-sm font-bold">4</span>
+          <span><b>Cavaliere arrives in 4–8 days.</b> Set it on the table, like in the reel. Done.</span>
+        </li>
+        <li class="flex gap-3 items-start">
+          <span class="mt-0.5 inline-flex w-6 h-6 rounded-full bg-primary/10 text-primary items-center justify-center text-sm font-bold">5</span>
+          <span><b>Then $9.99/month</b> keeps it all running. <b>Cancel any time, no commitment</b> — but the first $9.99 isn't refundable since the cavaliere ships immediately.</span>
+        </li>
+      </ul>
+
+      <div class="mt-8 reveal">
+        <a href="#checkout" class="inline-flex items-center gap-2 animated-gradient text-white font-semibold px-8 py-4 rounded-full hover:shadow-xl hover:shadow-primary/25 transition-all hover:scale-[1.02]">
+          Pay $9.99 &amp; ship my cavaliere →
+        </a>
+        <p class="text-sm text-gray-500 mt-3">Then $9.99/month · cancel anytime · no commitment</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== HOW IT WORKS ============== -->
+<section id="how" class="relative py-20 lg:py-28 bg-gradient-to-br from-surface via-white to-surface overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="aurora-blob-1" style="opacity:.55"></div>
+    <div class="aurora-blob-2" style="opacity:.55"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-medium mb-5 reveal">
+        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+        Four steps. About 15 minutes.
+      </div>
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight reveal">
+        From checkout to live<br/>
+        <span class="gradient-text-shimmer">AI agent today.</span>
+      </h2>
+    </div>
+
+    <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+      <div class="hidden lg:block absolute top-8 left-[12%] right-[12%] h-px bg-gradient-to-r from-primary/0 via-primary/40 to-accent/0"></div>
+
+      <div class="reveal cosmic-card-hover bg-white rounded-3xl p-7">
+        <div class="animated-gradient w-14 h-14 rounded-2xl text-white font-bold text-xl flex items-center justify-center shadow-lg shadow-primary/30">1</div>
+        <h3 class="text-lg lg:text-xl font-bold mt-5 tracking-tight">Pay $9.99</h3>
+        <p class="text-gray-600 mt-3 text-sm leading-relaxed">Stripe checkout (Apple Pay / Google Pay). ~30 seconds.</p>
+        <p class="text-xs text-primary font-semibold mt-3">One-time payment</p>
+      </div>
+
+      <div class="reveal cosmic-card-hover bg-white rounded-3xl p-7">
+        <div class="animated-gradient w-14 h-14 rounded-2xl text-white font-bold text-xl flex items-center justify-center shadow-lg shadow-primary/30">2</div>
+        <h3 class="text-lg lg:text-xl font-bold mt-5 tracking-tight">Address &amp; logo upload</h3>
+        <p class="text-gray-600 mt-3 text-sm leading-relaxed">Tell us where to ship your cavaliere and <b class="text-gray-900">upload your logo</b> — we print it on the cavaliere right next to the QR. Shipping is on us, worldwide.</p>
+        <p class="text-xs text-primary font-semibold mt-3">Custom-branded · free shipping</p>
+      </div>
+
+      <div class="reveal cosmic-card-hover bg-white rounded-3xl p-7">
+        <div class="animated-gradient w-14 h-14 rounded-2xl text-white font-bold text-xl flex items-center justify-center shadow-lg shadow-primary/30">3</div>
+        <h3 class="text-lg lg:text-xl font-bold mt-5 tracking-tight">Watch the tutorial</h3>
+        <p class="text-gray-600 mt-3 text-sm leading-relaxed">8 chapters · 15 min total. Build your AI agent on Hotely while you watch.</p>
+        <p class="text-xs text-primary font-semibold mt-3">Lifetime access</p>
+      </div>
+
+      <div class="reveal cosmic-card-hover bg-white rounded-3xl p-7">
+        <div class="animated-gradient w-14 h-14 rounded-2xl text-white font-bold text-xl flex items-center justify-center shadow-lg shadow-primary/30">4</div>
+        <h3 class="text-lg lg:text-xl font-bold mt-5 tracking-tight">Go live with the app</h3>
+        <p class="text-gray-600 mt-3 text-sm leading-relaxed">Free Hotely app for iOS &amp; Android. Monitor every chat, scan, booking, commission.</p>
+        <p class="text-xs text-primary font-semibold mt-3">Then $9.99/month · cancel anytime</p>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center reveal">
+      <a href="#checkout" class="inline-flex items-center gap-2 animated-gradient text-white font-semibold px-8 py-4 rounded-full hover:shadow-xl hover:shadow-primary/25 transition-all hover:scale-[1.02]">
+        Pay $9.99 &amp; ship my cavaliere →
+      </a>
+      <p class="text-sm text-gray-500 mt-3">Then $9.99/month · cancel anytime · no commitment</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TUTORIAL CHAPTERS ============== -->
+<section id="tutorial" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-start">
+
+    <div class="lg:col-span-5 lg:sticky lg:top-24 reveal">
+      <div class="rounded-3xl bg-gray-950 p-3 shadow-2xl shadow-primary/20 border border-gray-800">
+        <div class="aspect-video relative rounded-2xl overflow-hidden bg-gradient-to-br from-surface-dark via-white to-surface">
+          <div class="absolute inset-0 animated-gradient opacity-20"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-20 h-20 rounded-full animated-gradient flex items-center justify-center shadow-2xl pulse-glow">
+              <svg class="w-8 h-8 ml-1 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="absolute top-4 left-4 right-4 flex items-start justify-between">
+            <div>
+              <p class="text-[10px] uppercase tracking-widest text-primary font-bold">Hotely · Tutorial</p>
+              <p class="font-bold text-gray-900">Build your AI agent in 15 min</p>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest bg-white/80 backdrop-blur px-2 py-1 rounded-full text-gray-700">HD</span>
+          </div>
+          <div class="absolute bottom-0 inset-x-0 p-3">
+            <div class="h-1.5 bg-white/40 rounded-full overflow-hidden">
+              <div class="h-full w-1/3 animated-gradient rounded-full"></div>
+            </div>
+            <div class="flex justify-between text-[10px] text-gray-700 mt-1.5 font-semibold">
+              <span>04:21</span><span>15:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-3 pt-3 pb-1 flex items-center justify-between text-xs text-gray-300">
+          <div class="flex items-center gap-2">
+            <span class="w-7 h-7 rounded-full animated-gradient flex items-center justify-center text-[11px] font-bold text-white">H</span>
+            <span>Hotely Team</span>
+          </div>
+          <span>📺 8 chapters · 🇬🇧 EN · 🇮🇹 IT subs</span>
+        </div>
+      </div>
+
+      <div class="mt-6 grid grid-cols-3 gap-3">
+        <div class="rounded-xl bg-surface border border-primary/10 p-3 text-center">
+          <p class="text-2xl font-bold gradient-text">15 min</p>
+          <p class="text-[11px] text-gray-600 mt-1">total run time</p>
+        </div>
+        <div class="rounded-xl bg-surface border border-primary/10 p-3 text-center">
+          <p class="text-2xl font-bold gradient-text">8</p>
+          <p class="text-[11px] text-gray-600 mt-1">guided chapters</p>
+        </div>
+        <div class="rounded-xl bg-surface border border-primary/10 p-3 text-center">
+          <p class="text-2xl font-bold gradient-text">∞</p>
+          <p class="text-[11px] text-gray-600 mt-1">re-watches included</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-5 reveal">
+        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        Inside the tutorial you unlock for $9.99
+      </div>
+      <h2 class="text-4xl sm:text-5xl font-bold leading-tight tracking-tight reveal">
+        Eight short chapters.<br/>
+        <span class="gradient-text-shimmer">Your agent goes live by the end.</span>
+      </h2>
+      <p class="mt-5 text-lg text-gray-600 leading-relaxed reveal">
+        Filmed by the Hotely team — clean screen recordings, real captions, no "now click here…
+        wait, where did that go?" energy. Pause, rewind, follow along on your own dashboard.
+      </p>
+
+      <div class="mt-8 space-y-3">
+        <div class="reveal cosmic-card-hover rounded-2xl p-5 flex gap-4 items-start">
+          <div class="shrink-0 w-12 h-12 rounded-xl bg-primary/10 text-primary font-bold flex items-center justify-center">01</div>
+          <div class="flex-1">
+            <div class="flex items-baseline justify-between gap-3">
+              <h3 class="font-bold tracking-tight">Welcome &amp; quick tour of Hotely</h3>
+              <span class="text-xs text-gray-500 font-mono">01:10</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">What you just bought, where to find everything, how the AI agent thinks.</p>
+          </div>
+        </div>
+
+        <div class="reveal cosmic-card-hover rounded-2xl p-5 flex gap-4 items-start">
+          <div class="shrink-0 w-12 h-12 rounded-xl bg-accent/10 text-accent font-bold flex items-center justify-center">02</div>
+          <div class="flex-1">
+            <div class="flex items-baseline justify-between gap-3">
+              <h3 class="font-bold tracking-tight">Create your apartment profile</h3>
+              <span class="text-xs text-gray-500 font-mono">01:45</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Name, address, photos, branding colors. We pick smart defaults so you can skip what you don't care about.</p>
+          </div>
+        </div>
+
+        <div class="reveal cosmic-card-hover rounded-2xl p-5 flex gap-4 items-start">
+          <div class="shrink-0 w-12 h-12 rounded-xl bg-primary/10 text-primary font-bold flex items-center justify-center">03</div>
+          <div class="flex-1">
+            <div class="flex items-baseline justify-between gap-3">
+              <h3 class="font-bold tracking-tight">Add Wi-Fi (tap-to-connect)</h3>
+              <span class="text-xs text-gray-500 font-mono">01:20</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Drop SSID + password once — guests just tap "connect" on iOS &amp; Android. No more typing nightmares.</p>
+          </div>
+        </div>
+
+        <div class="reveal cosmic-card-hover rounded-2xl p-5 flex gap-4 items-start">
+          <div class="shrink-0 w-12 h-12 rounded-xl bg-accent/10 text-accent font-bold flex items-center justify-center">04</div>
+          <div class="flex-1">
+            <div class="flex items-baseline justify-between gap-3">
+              <h3 class="font-bold tracking-tight">Set up self check-in</h3>
+              <span class="text-xs text-gray-500 font-mono">02:15</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Door code, parking, trash day, A/C remote — type once, the agent answers it forever in 14 languages.</p>
+          </div>
+        </div>
+
+        <div class="reveal cosmic-card-hover rounded-2xl p-5 flex gap-4 items-start">
+          <div class="shrink-0 w-12 h-12 rounded-xl bg-primary/10 text-primary font-bold flex items-center justify-center">05</div>
+          <div class="flex-1">
+            <div class="flex items-baseline justify-between gap-3">
+              <h3 class="font-bold tracking-tight">Pin the best places to eat &amp; drink</h3>
+              <span class="text-xs text-gray-500 font-mono">02:30</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Add your handpicked spots, or let our AI seed it with the top-rated locals near your address.</p>
+          </div>
+        </div>
+
+        <div class="reveal cosmic-card-hover rounded-2xl p-5 flex gap-4 items-start">
+          <div class="shrink-0 w-12 h-12 rounded-xl bg-accent/10 text-accent font-bold flex items-center justify-center">06</div>
+          <div class="flex-1">
+            <div class="flex items-baseline justify-between gap-3">
+              <h3 class="font-bold tracking-tight">Enable bookable experiences (earn money)</h3>
+              <span class="text-xs text-gray-500 font-mono">02:00</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Pick from 2,000+ vetted experiences across Europe — wine, boats, cooking, tours. Up to <b>15% commission</b> goes back to you.</p>
+          </div>
+        </div>
+
+        <div class="reveal cosmic-card-hover rounded-2xl p-5 flex gap-4 items-start">
+          <div class="shrink-0 w-12 h-12 rounded-xl bg-primary/10 text-primary font-bold flex items-center justify-center">07</div>
+          <div class="flex-1">
+            <div class="flex items-baseline justify-between gap-3">
+              <h3 class="font-bold tracking-tight">Train the AI agent in 90 seconds</h3>
+              <span class="text-xs text-gray-500 font-mono">02:00</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Set the tone (friendly / formal / playful), block topics, add private notes. Test it live before any real guest sees it.</p>
+          </div>
+        </div>
+
+        <div class="reveal cosmic-card-hover rounded-2xl p-5 flex gap-4 items-start">
+          <div class="shrink-0 w-12 h-12 rounded-xl bg-accent/10 text-accent font-bold flex items-center justify-center">08</div>
+          <div class="flex-1">
+            <div class="flex items-baseline justify-between gap-3">
+              <h3 class="font-bold tracking-tight">Place your cavaliere &amp; download the app</h3>
+              <span class="text-xs text-gray-500 font-mono">02:00</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Once your cavaliere arrives (4–8 days), set it on the table. Install the Hotely app to see every chat, scan, booking — live, in your pocket.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 reveal">
+        <a href="#checkout" class="inline-flex items-center gap-2 animated-gradient text-white font-semibold px-8 py-4 rounded-full hover:shadow-xl hover:shadow-primary/25 transition-all hover:scale-[1.02]">
+          Pay $9.99 &amp; unlock all 8 chapters →
+        </a>
+        <p class="text-sm text-gray-500 mt-3">Lifetime access · Updated whenever we improve the product</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FEATURES ============== -->
+<section id="features" class="relative py-20 lg:py-28 bg-gradient-to-br from-surface via-white to-surface overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="aurora-blob-1" style="opacity:.6"></div>
+    <div class="aurora-blob-2" style="opacity:.6"></div>
+  </div>
+  <div id="starfield-features" class="absolute inset-0 pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-5 reveal">
+        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        One scan. Everything.
+      </div>
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight reveal">
+        Wi-Fi · Restaurants ·<br/>
+        <span class="gradient-text-shimmer">Local experiences.</span>
+      </h2>
+      <p class="text-lg text-gray-600 mt-6 leading-relaxed reveal">
+        The same three things she said in the reel. Your guests get all of it from one scan, on a
+        beautiful page powered by your AI agent.
+      </p>
+    </div>
+
+    <div class="mt-16 grid md:grid-cols-2 gap-6">
+      <div class="reveal cosmic-card-hover rounded-3xl p-8">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-2xl">📶</div>
+          <span class="text-xs font-bold uppercase tracking-widest text-primary">01 / Wi-Fi</span>
+        </div>
+        <h3 class="text-2xl lg:text-3xl font-bold mt-5 tracking-tight">Tap-to-connect Wi-Fi</h3>
+        <p class="text-gray-600 mt-3 leading-relaxed">No more dictating "ZxQ7-mango-9!". Guests tap once and they're online — works on iOS and Android.</p>
+        <ul class="mt-5 space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span> Auto-connect on iOS &amp; Android</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span> Multiple networks (guest, smart-TV, etc.)</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span> Works offline-first if Wi-Fi drops</li>
+        </ul>
+      </div>
+
+      <div class="reveal cosmic-card-hover rounded-3xl p-8">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-accent/10 flex items-center justify-center text-2xl">🔑</div>
+          <span class="text-xs font-bold uppercase tracking-widest text-accent">02 / Check-in</span>
+        </div>
+        <h3 class="text-2xl lg:text-3xl font-bold mt-5 tracking-tight">Self check-in, done right</h3>
+        <p class="text-gray-600 mt-3 leading-relaxed">Door codes, parking, trash day, A/C remote, the quirky thing about the shower — all in one tidy screen.</p>
+        <ul class="mt-5 space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="text-accent font-bold">✓</span> Door &amp; gate codes with timed reveal</li>
+          <li class="flex gap-2"><span class="text-accent font-bold">✓</span> Photos &amp; short videos for tricky spots</li>
+          <li class="flex gap-2"><span class="text-accent font-bold">✓</span> House rules in 14 languages — auto-translated</li>
+        </ul>
+      </div>
+
+      <div class="reveal cosmic-card-hover rounded-3xl p-8">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-2xl">🍝</div>
+          <span class="text-xs font-bold uppercase tracking-widest text-primary">03 / Restaurants</span>
+        </div>
+        <h3 class="text-2xl lg:text-3xl font-bold mt-5 tracking-tight">The best spots, your taste.</h3>
+        <p class="text-gray-600 mt-3 leading-relaxed">Curated places to eat &amp; drink near the apartment — your handpicked picks plus AI-ranked locals.</p>
+        <ul class="mt-5 space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span> Pin your favorites with one click</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span> Filters: vegan, kid-friendly, late night, romantic</li>
+          <li class="flex gap-2"><span class="text-primary font-bold">✓</span> One-tap directions, menus, reservations</li>
+        </ul>
+      </div>
+
+      <div class="reveal relative rounded-3xl p-8 text-white animated-gradient overflow-hidden">
+        <div class="absolute inset-0 bg-black/10"></div>
+        <div class="relative">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-white/25 backdrop-blur flex items-center justify-center text-2xl">🎟️</div>
+            <span class="text-xs font-bold uppercase tracking-widest">04 / Experiences · earn money</span>
+          </div>
+          <h3 class="text-2xl lg:text-3xl font-bold mt-5 tracking-tight">Bookable local experiences</h3>
+          <p class="text-white/90 mt-3 leading-relaxed">Wine tastings, boat tours, cooking classes, transfers. Guests book in 2 taps — <b>you earn a commission on every booking</b>.</p>
+          <ul class="mt-5 space-y-2 text-sm text-white/95">
+            <li class="flex gap-2"><span>✓</span> 2,000+ vetted experiences across Europe</li>
+            <li class="flex gap-2"><span>✓</span> Up to <b>15% commission</b> back to you</li>
+            <li class="flex gap-2"><span>✓</span> Auto-suggest based on weather &amp; stay length</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 text-center">
+      <a href="#checkout" class="inline-flex items-center gap-2 animated-gradient text-white font-semibold px-8 py-4 rounded-full hover:shadow-xl hover:shadow-primary/25 transition-all hover:scale-[1.02]">
+        Pay $9.99 &amp; ship my cavaliere →
+      </a>
+      <p class="text-sm text-gray-500 mt-3">Then $9.99/month · cancel anytime</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== STATS ============== -->
+<section class="py-16 lg:py-20 bg-white border-y border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div class="reveal">
+        <div class="text-5xl lg:text-6xl font-bold gradient-text tracking-tight">−72%</div>
+        <p class="mt-2 text-gray-600 text-sm">fewer guest messages per stay</p>
+      </div>
+      <div class="reveal">
+        <div class="text-5xl lg:text-6xl font-bold gradient-text tracking-tight">+0.4★</div>
+        <p class="mt-2 text-gray-600 text-sm">average rating boost in 90 days</p>
+      </div>
+      <div class="reveal">
+        <div class="text-5xl lg:text-6xl font-bold gradient-text tracking-tight">€840</div>
+        <p class="mt-2 text-gray-600 text-sm">avg monthly extra revenue<br/>per apartment</p>
+      </div>
+      <div class="reveal">
+        <div class="text-5xl lg:text-6xl font-bold gradient-text tracking-tight">15 min</div>
+        <p class="mt-2 text-gray-600 text-sm">tutorial → live AI agent</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TESTIMONIALS ============== -->
+<section class="py-20 lg:py-28 bg-gradient-to-br from-surface via-white to-surface">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-5 reveal">
+        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        Loved by hosts
+      </div>
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight reveal">
+        Real hosts. Real reviews.<br/>
+        <span class="gradient-text-shimmer">Real revenue.</span>
+      </h2>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-6">
+      <figure class="reveal cosmic-card-hover p-7 rounded-2xl">
+        <div class="text-yellow-400">★★★★★</div>
+        <blockquote class="mt-4 text-gray-800 leading-relaxed">
+          "Saw the reel, paid the $9.99, watched the tutorial during dinner. By bedtime my agent was answering guests in three languages. Cavaliere arrived on day 5."
+        </blockquote>
+        <figcaption class="mt-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full animated-gradient"></div>
+          <div>
+            <div class="font-semibold text-sm text-gray-900">Giulia R.</div>
+            <div class="text-xs text-gray-500">3 apartments · Lisbon</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="reveal cosmic-card-hover p-7 rounded-2xl">
+        <div class="text-yellow-400">★★★★★</div>
+        <blockquote class="mt-4 text-gray-800 leading-relaxed">
+          "First month I made €1,140 just from experience commissions. The Hotely app shows me every booking in real time."
+        </blockquote>
+        <figcaption class="mt-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-accent-light"></div>
+          <div>
+            <div class="font-semibold text-sm text-gray-900">Marco D.</div>
+            <div class="text-xs text-gray-500">7 apartments · Rome</div>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="reveal cosmic-card-hover p-7 rounded-2xl">
+        <div class="text-yellow-400">★★★★★</div>
+        <blockquote class="mt-4 text-gray-800 leading-relaxed">
+          "Best $9.99 I've spent on my rental. The cavaliere feels premium — guests literally take photos of it. The tutorial is straight to the point."
+        </blockquote>
+        <figcaption class="mt-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary-light"></div>
+          <div>
+            <div class="font-semibold text-sm text-gray-900">Sofie L.</div>
+            <div class="text-xs text-gray-500">12 apartments · Barcelona</div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PRICING / CHECKOUT ============== -->
+<section id="pricing" class="relative py-20 lg:py-28 overflow-hidden bg-white">
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="aurora-blob-1" style="opacity:.5"></div>
+    <div class="aurora-blob-2" style="opacity:.5"></div>
+  </div>
+
+  <div id="checkout" class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-medium mb-5 reveal">
+      <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+      Simple pricing
+    </div>
+    <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight reveal">
+      $9.99 today.<br/>
+      <span class="gradient-text-shimmer">$9.99 every month.</span>
+    </h2>
+    <p class="text-gray-600 mt-5 max-w-2xl mx-auto leading-relaxed reveal">
+      One simple price. Tutorial unlocks instantly, the cavaliere ships to you within 4–8 days,
+      then you only pay $9.99/month — and you can cancel any time.
+    </p>
+
+    <div class="mt-12 max-w-md mx-auto reveal">
+      <div class="relative rounded-3xl bg-white p-8 shadow-2xl shadow-primary/10 border border-gray-100">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 animated-gradient text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg">
+          Cavaliere + tutorial bundle
+        </div>
+
+        <p class="font-bold text-lg mt-2 text-gray-900">Hotely Apartments</p>
+
+        <div class="mt-4 flex items-baseline justify-center gap-1">
+          <span class="text-2xl font-bold align-top mt-3 text-gray-700">$</span>
+          <span class="text-7xl font-black tracking-tight gradient-text">9.99</span>
+          <span class="text-gray-500 ml-1">today</span>
+        </div>
+        <p class="text-sm text-gray-500">unlocks the tutorial &amp; ships your cavaliere · first month included</p>
+
+        <div class="mt-3 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface text-primary-dark text-xs font-semibold">
+          then $9.99 / month · cancel in 1 click
+        </div>
+
+        <ul class="mt-7 text-left space-y-3 text-sm text-gray-700">
+          <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Step-by-step video tutorial (8 chapters · 15 min)</li>
+          <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Lifetime access — re-watch anytime, updated forever</li>
+          <li class="flex gap-3"><span class="text-primary font-bold">✓</span> <b>Physical QR cavaliere shipped free worldwide</b></li>
+          <li class="flex gap-3"><span class="text-primary font-bold">✓</span> AI agent: Wi-Fi, check-in, restaurants, experiences</li>
+          <li class="flex gap-3"><span class="text-primary font-bold">✓</span> 2,000+ bookable experiences (you earn up to 15%)</li>
+          <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Hotely app (iOS &amp; Android) — monitor every chat</li>
+          <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Auto-translation in 14 languages</li>
+          <li class="flex gap-3"><span class="text-primary font-bold">✓</span> Email support from a real human</li>
+        </ul>
+
+        <a href="#" data-checkout class="mt-8 inline-flex w-full items-center justify-center gap-2 animated-gradient text-white font-semibold px-6 py-4 rounded-full hover:shadow-xl hover:shadow-primary/25 transition-all hover:scale-[1.02]">
+          Pay $9.99 &amp; ship my cavaliere →
+        </a>
+
+        <!-- Shipping address callout -->
+        <div class="mt-5 flex items-start gap-3 text-left p-4 rounded-2xl bg-surface border border-primary/15">
+          <span class="inline-flex shrink-0 items-center justify-center w-9 h-9 rounded-full bg-white text-primary shadow-sm">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <p class="text-sm text-gray-700">
+            <b class="text-gray-900">At checkout you'll enter the shipping address and upload your logo.</b> We print your logo on the cavaliere next to the QR — shipping is on us.
+          </p>
+        </div>
+
+        <!-- Cancel anytime, no refund note -->
+        <div class="mt-3 text-left p-4 rounded-2xl bg-gray-50 border border-gray-200">
+          <div class="flex items-start gap-3">
+            <span class="inline-flex shrink-0 items-center justify-center w-9 h-9 rounded-full bg-white text-gray-700 shadow-sm">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </span>
+            <div class="text-sm text-gray-700">
+              <p><b class="text-gray-900">Cancel anytime, no commitment.</b> Stop the $9.99/month subscription whenever you want, in one click from the Hotely app.</p>
+              <p class="mt-2 text-xs text-gray-500">Note: the initial $9.99 is non-refundable since the cavaliere is a physical product that ships immediately. The cavaliere is yours to keep, regardless.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-xs text-gray-500 mt-5">Secure checkout · Stripe · Apple Pay · Google Pay</p>
+      </div>
+
+      <p class="text-xs text-gray-500 mt-6">Got 5+ apartments? <a href="mailto:mircodallatorre@hotely.ai" class="text-primary font-semibold hover:text-primary-dark">Get a volume discount →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FINAL CTA ============== -->
+<section id="cta" class="relative py-20 lg:py-28 overflow-hidden text-white">
+  <div class="absolute inset-0 animated-gradient"></div>
+  <div class="absolute inset-0 bg-black/10"></div>
+  <div id="starfield-cta" class="absolute inset-0 pointer-events-none"></div>
+  <div class="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-white/10 blur-3xl"></div>
+  <div class="absolute -bottom-40 -right-40 w-[600px] h-[600px] rounded-full bg-black/20 blur-3xl"></div>
+
+  <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight reveal">
+      Like she said in the reel:<br/>
+      <i>"trust me, you need this one."</i>
+    </h2>
+    <p class="text-lg text-white/90 mt-6 leading-relaxed reveal">
+      Pay $9.99 once, watch the 15-min tutorial, get your cavaliere shipped to your door.
+      Then $9.99/month for as long as you want it. Cancel any time.
+    </p>
+
+    <div class="mt-10 reveal">
+      <a href="#" data-checkout class="inline-flex items-center justify-center gap-3 px-8 py-5 rounded-full bg-white text-primary font-bold text-lg hover:bg-gray-50 transition-all hover:scale-[1.02] shadow-2xl">
+        Pay $9.99 &amp; ship my cavaliere
+        <span>→</span>
+      </a>
+      <p class="mt-4 text-sm text-white/85">
+        Then $9.99/month · Cancel anytime · No commitment
+      </p>
+    </div>
+
+    <div class="mt-10 flex items-center justify-center gap-3 text-sm text-white/85">
+      <div class="flex -space-x-2">
+        <div class="w-7 h-7 rounded-full bg-white/30 backdrop-blur border-2 border-white/40"></div>
+        <div class="w-7 h-7 rounded-full bg-white/30 backdrop-blur border-2 border-white/40"></div>
+        <div class="w-7 h-7 rounded-full bg-white/30 backdrop-blur border-2 border-white/40"></div>
+      </div>
+      <span>+47 hosts joined this week from the reel</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FAQ ============== -->
+<section id="faq" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-5 reveal">
+        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        FAQ
+      </div>
+      <h2 class="text-4xl sm:text-5xl font-bold tracking-tight reveal">
+        Things hosts ask <span class="gradient-text-shimmer">before paying</span>
+      </h2>
+    </div>
+
+    <div class="mt-12 space-y-3">
+      <details class="reveal group bg-white cosmic-card-hover rounded-2xl p-5">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none text-gray-900">
+          What exactly do I get for $9.99 today?
+          <span class="text-primary group-open:rotate-45 transition text-xl">+</span>
+        </summary>
+        <p class="mt-3 text-gray-600 leading-relaxed">
+          Three things, bundled into one $9.99 payment: <b>(1)</b> instant access to the full
+          step-by-step video tutorial (8 chapters, ~15 min), <b>(2)</b> your custom physical QR
+          <i>cavaliere</i> shipped free to your address, and <b>(3)</b> your first month of Hotely
+          service. After that it renews at $9.99/month — cancel any time.
+        </p>
+      </details>
+
+      <details class="reveal group bg-white cosmic-card-hover rounded-2xl p-5">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none text-gray-900">
+          Why do I have to enter a shipping address and upload a logo?
+          <span class="text-primary group-open:rotate-45 transition text-xl">+</span>
+        </summary>
+        <p class="mt-3 text-gray-600 leading-relaxed">
+          Because we ship you the physical cavaliere — the actual table-tent (the one you saw in
+          the reel) — and we print your logo on it, right next to the QR code. So at checkout we
+          ask for two things: <b>your shipping address</b> and <b>your logo file</b> (PNG, SVG or
+          PDF — we'll auto-clean the background for you). Shipping is included in the $9.99,
+          worldwide. If you don't have a logo yet, you can skip the upload and we'll ship the
+          cavaliere with just the Hotely.ai branding.
+        </p>
+      </details>
+
+      <details class="reveal group bg-white cosmic-card-hover rounded-2xl p-5">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none text-gray-900">
+          When do I receive the tutorial vs. the cavaliere?
+          <span class="text-primary group-open:rotate-45 transition text-xl">+</span>
+        </summary>
+        <p class="mt-3 text-gray-600 leading-relaxed">
+          The video tutorial unlocks <b>instantly</b> after payment — we email you a magic link and
+          you land on your dashboard with the video ready. The physical cavaliere ships within
+          24h and arrives at your door in <b>4–8 business days</b> (sometimes faster in the EU).
+        </p>
+      </details>
+
+      <details class="reveal group bg-white cosmic-card-hover rounded-2xl p-5">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none text-gray-900">
+          Can I cancel anytime?
+          <span class="text-primary group-open:rotate-45 transition text-xl">+</span>
+        </summary>
+        <p class="mt-3 text-gray-600 leading-relaxed">
+          Yes — cancel any time, in one click from the Hotely app. There is no minimum commitment.
+          You stop paying $9.99/month from the moment you cancel and the cavaliere stays yours to keep.
+        </p>
+      </details>
+
+      <details class="reveal group bg-white cosmic-card-hover rounded-2xl p-5">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none text-gray-900">
+          Is the first $9.99 refundable?
+          <span class="text-primary group-open:rotate-45 transition text-xl">+</span>
+        </summary>
+        <p class="mt-3 text-gray-600 leading-relaxed">
+          No. Because the $9.99 also pays for your physical cavaliere — which we produce and ship
+          to you immediately — the initial payment is non-refundable. The good news: the cavaliere
+          is <b>yours to keep forever</b>, even if you cancel the monthly subscription the next day.
+        </p>
+      </details>
+
+      <details class="reveal group bg-white cosmic-card-hover rounded-2xl p-5">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none text-gray-900">
+          How long does setup actually take?
+          <span class="text-primary group-open:rotate-45 transition text-xl">+</span>
+        </summary>
+        <p class="mt-3 text-gray-600 leading-relaxed">
+          About 15 minutes if you follow along with the video. The longest step is typing in your
+          favorite local spots — and you can skip that and let our AI seed it for you.
+        </p>
+      </details>
+
+      <details class="reveal group bg-white cosmic-card-hover rounded-2xl p-5">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none text-gray-900">
+          Do I need any tech skills?
+          <span class="text-primary group-open:rotate-45 transition text-xl">+</span>
+        </summary>
+        <p class="mt-3 text-gray-600 leading-relaxed">
+          No. The tutorial is built for hosts, not developers. If you can use Instagram, you can use Hotely.
+        </p>
+      </details>
+
+      <details class="reveal group bg-white cosmic-card-hover rounded-2xl p-5">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none text-gray-900">
+          What's the Hotely app for?
+          <span class="text-primary group-open:rotate-45 transition text-xl">+</span>
+        </summary>
+        <p class="mt-3 text-gray-600 leading-relaxed">
+          Free iOS &amp; Android app where you see every guest conversation in real time, every QR scan,
+          every experience booked, and every commission you've earned. You can override the AI any
+          moment and reply yourself. You also cancel your subscription from there in one tap.
+        </p>
+      </details>
+
+      <details class="reveal group bg-white cosmic-card-hover rounded-2xl p-5">
+        <summary class="flex justify-between items-center cursor-pointer font-semibold list-none text-gray-900">
+          What if I have multiple apartments?
+          <span class="text-primary group-open:rotate-45 transition text-xl">+</span>
+        </summary>
+        <p class="mt-3 text-gray-600 leading-relaxed">
+          Each apartment is $9.99/month and gets its own QR cavaliere + page. Volume discounts kick
+          in at 5+ apartments — email <a class="text-primary font-semibold" href="mailto:mircodallatorre@hotely.ai">mircodallatorre@hotely.ai</a> for a custom quote.
+        </p>
+      </details>
+    </div>
+
+    <div class="mt-12 text-center reveal">
+      <a href="#" data-checkout class="inline-flex items-center gap-2 animated-gradient text-white font-semibold px-8 py-4 rounded-full hover:shadow-xl hover:shadow-primary/25 transition-all hover:scale-[1.02]">
+        Pay $9.99 &amp; ship my cavaliere →
+      </a>
+      <p class="text-sm text-gray-500 mt-3">Then $9.99/month · cancel anytime</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="bg-gray-950 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div class="lg:col-span-1">
+        <a href="#" class="flex items-center gap-1 mb-4">
+          <span class="text-2xl font-bold text-white">Hotely</span>
+          <span class="text-2xl font-bold text-accent">.ai</span>
+        </a>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Simplify Hospitality.<br/>
+          The AI concierge that turns<br/>
+          every apartment into a 5-star stay.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4">Product</h4>
+        <ul class="space-y-3">
+          <li><a href="#features" class="text-sm text-gray-400 hover:text-accent transition-colors">Features</a></li>
+          <li><a href="#how" class="text-sm text-gray-400 hover:text-accent transition-colors">How it works</a></li>
+          <li><a href="#tutorial" class="text-sm text-gray-400 hover:text-accent transition-colors">The tutorial</a></li>
+          <li><a href="#pricing" class="text-sm text-gray-400 hover:text-accent transition-colors">Pricing</a></li>
+          <li><a href="#faq" class="text-sm text-gray-400 hover:text-accent transition-colors">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4">Solutions</h4>
+        <ul class="space-y-3">
+          <li><a href="#" class="text-sm text-gray-400 hover:text-accent transition-colors">Hotel &amp; BnB</a></li>
+          <li><a href="#" class="text-sm text-gray-400 hover:text-accent transition-colors">Property Manager</a></li>
+          <li><a href="#" class="text-sm text-gray-400 hover:text-accent transition-colors">Restaurants &amp; Bar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4">Contact</h4>
+        <ul class="space-y-3">
+          <li class="text-sm text-gray-400">mircodallatorre@hotely.ai</li>
+          <li><a href="#checkout" class="inline-block mt-2 text-sm font-semibold text-accent hover:text-accent-light transition-colors">Pay $9.99 &amp; ship my cavaliere →</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-gray-500">© <span id="yr">2026</span> Hotely.ai — Aurora Technologies S.r.l. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a href="#" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">Privacy Policy</a>
+        <a href="#" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">Cookie Policy</a>
+        <a href="#" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">Terms of service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============== STICKY MOBILE CTA ============== -->
+<div class="lg:hidden fixed bottom-0 inset-x-0 z-40 px-4 py-3 bg-white/90 backdrop-blur border-t border-gray-100">
+  <a href="#checkout" class="flex items-center justify-between gap-3 rounded-full animated-gradient text-white font-semibold px-5 py-3.5 shadow-lg shadow-primary/30">
+    <span>Pay $9.99 &amp; ship my cavaliere</span>
+    <span>→</span>
+  </a>
+</div>
+
+<script>
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => e.isIntersecting && e.target.classList.add('in'));
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Star field generator
+  const buildStars = (id, count = 35) => {
+    const host = document.getElementById(id);
+    if (!host) return;
+    const palette = ['', 'star-accent', 'star-primary'];
+    for (let i = 0; i < count; i++) {
+      const s = document.createElement('span');
+      s.className = 'star ' + palette[i % palette.length];
+      s.style.left = Math.random() * 100 + '%';
+      s.style.top  = Math.random() * 100 + '%';
+      s.style.setProperty('--d',   (2 + Math.random() * 4).toFixed(2) + 's');
+      s.style.setProperty('--del', (Math.random() * 5).toFixed(2) + 's');
+      host.appendChild(s);
+    }
+  };
+  buildStars('starfield-hero', 35);
+  buildStars('starfield-features', 25);
+  buildStars('starfield-cta', 30);
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Checkout — wire to your Stripe Payment Link.
+  // IMPORTANT: in Stripe, enable "Collect shipping address" on this Payment Link
+  // so the customer's address is captured at checkout.
+  const CHECKOUT_URL = 'https://buy.stripe.com/REPLACE_ME'; // TODO: replace with your real Stripe Payment Link
+  document.querySelectorAll('[data-checkout]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      if (CHECKOUT_URL.includes('REPLACE_ME')) {
+        e.preventDefault();
+        document.getElementById('pricing').scrollIntoView({ behavior:'smooth' });
+        console.warn('[Hotely] Set CHECKOUT_URL in index.html before going live.');
+      } else {
+        e.preventDefault();
+        window.location.href = CHECKOUT_URL;
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
