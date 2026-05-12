@@ -559,6 +559,204 @@
   </div>
 </section>
 
+<!-- ============== HOTELY APP (iOS + Android) ============== -->
+<section id="app" class="relative py-20 lg:py-28 bg-gradient-to-br from-surface via-white to-surface overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="aurora-blob-1" style="opacity:.40"></div>
+    <div class="aurora-blob-2" style="opacity:.40"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+    <!-- Left: phone mock (dashboard view) -->
+    <div class="relative reveal order-2 lg:order-1">
+      <div class="relative mx-auto max-w-xs">
+        <div class="absolute -inset-8 bg-accent/15 blur-3xl rounded-full"></div>
+
+        <div class="relative rounded-[2.25rem] bg-gray-950 p-2 shadow-2xl border border-gray-800">
+          <div class="rounded-[1.85rem] bg-gradient-to-b from-surface to-white overflow-hidden">
+            <!-- status -->
+            <div class="flex items-center justify-between px-5 pt-3 pb-2 text-[10px] text-gray-500 font-mono font-semibold">
+              <span>9:41</span>
+              <span class="flex items-center gap-1">📶 5G 🔋 92%</span>
+            </div>
+            <!-- header -->
+            <div class="px-5 pb-3 flex items-center justify-between">
+              <div>
+                <p class="text-[10px] uppercase tracking-widest text-primary font-bold">Hotely</p>
+                <p class="text-lg font-bold text-gray-900 tracking-tight">Today</p>
+              </div>
+              <div class="flex items-center gap-1.5 text-xs">
+                <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                <span class="text-green-700 font-semibold">Live</span>
+              </div>
+            </div>
+
+            <!-- KPI row -->
+            <div class="px-5 grid grid-cols-3 gap-2">
+              <div class="rounded-xl bg-white border border-gray-100 p-2 text-center shadow-sm">
+                <p class="text-base font-bold gradient-text leading-none">14</p>
+                <p class="text-[8px] uppercase tracking-wider text-gray-500 mt-1">QR scans</p>
+              </div>
+              <div class="rounded-xl bg-white border border-gray-100 p-2 text-center shadow-sm">
+                <p class="text-base font-bold gradient-text leading-none">€92</p>
+                <p class="text-[8px] uppercase tracking-wider text-gray-500 mt-1">Earned</p>
+              </div>
+              <div class="rounded-xl bg-white border border-gray-100 p-2 text-center shadow-sm">
+                <p class="text-base font-bold gradient-text leading-none">12</p>
+                <p class="text-[8px] uppercase tracking-wider text-gray-500 mt-1">Replies</p>
+              </div>
+            </div>
+
+            <!-- Conversations label -->
+            <div class="px-5 mt-4 flex items-center justify-between">
+              <p class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Live conversations</p>
+              <p class="text-[10px] text-primary font-semibold">See all</p>
+            </div>
+
+            <!-- Conv items -->
+            <div class="px-5 mt-2 space-y-2 pb-4">
+              <div class="flex items-center gap-2.5 p-2 rounded-xl bg-white border border-gray-100">
+                <div class="w-8 h-8 rounded-full animated-gradient flex items-center justify-center text-[10px] text-white font-bold shrink-0">AI</div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-1 text-[11px] font-bold text-gray-900">
+                    <span>Apt 3B</span><span class="text-gray-400">·</span><span>🇫🇷</span>
+                  </div>
+                  <p class="text-[10px] text-gray-600 truncate">"Code de la porte ? Bienvenue !"</p>
+                </div>
+                <span class="text-[9px] text-gray-400 shrink-0">2m</span>
+              </div>
+              <div class="flex items-center gap-2.5 p-2 rounded-xl bg-white border border-gray-100">
+                <div class="w-8 h-8 rounded-full animated-gradient flex items-center justify-center text-[10px] text-white font-bold shrink-0">AI</div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-1 text-[11px] font-bold text-gray-900">
+                    <span>Apt 3B</span><span class="text-gray-400">·</span><span>🇯🇵</span>
+                  </div>
+                  <p class="text-[10px] text-gray-600 truncate">Wi-Fi: CasaDelMare_5G…</p>
+                </div>
+                <span class="text-[9px] text-gray-400 shrink-0">14m</span>
+              </div>
+              <div class="flex items-center gap-2.5 p-2 rounded-xl bg-white border border-gray-100">
+                <div class="w-8 h-8 rounded-full animated-gradient flex items-center justify-center text-[10px] text-white font-bold shrink-0">AI</div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-1 text-[11px] font-bold text-gray-900">
+                    <span>Apt 3B</span><span class="text-gray-400">·</span><span>🇬🇧</span>
+                  </div>
+                  <p class="text-[10px] text-gray-600 truncate">Booked wine tasting · +€18 to you 🍷</p>
+                </div>
+                <span class="text-[9px] text-gray-400 shrink-0">1h</span>
+              </div>
+            </div>
+
+            <!-- Override CTA -->
+            <div class="mx-5 mb-4 p-2.5 rounded-2xl bg-gray-900 text-white flex items-center justify-between">
+              <div>
+                <p class="text-[10px] uppercase tracking-widest text-accent font-bold">You're in control</p>
+                <p class="text-[11px] font-semibold leading-tight">Tap any chat to take over from the AI</p>
+              </div>
+              <div class="w-8 h-8 rounded-xl bg-white text-gray-900 flex items-center justify-center text-base shrink-0">✋</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- floating push notification -->
+        <div class="absolute -top-3 -right-4 glass rounded-2xl px-3 py-2 shadow-xl rotate-3 max-w-[180px]">
+          <p class="text-[9px] font-bold uppercase gradient-text">+€18 commission</p>
+          <p class="text-[10px] leading-tight text-gray-700">Just booked: Sunset wine tasting</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: text + app store buttons -->
+    <div class="order-1 lg:order-2">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-medium mb-5 reveal">
+        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+        Hotely app · iOS &amp; Android · free
+      </div>
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight reveal">
+        You don't lose control.<br/>
+        <span class="gradient-text-shimmer">You gain a sidekick.</span>
+      </h2>
+      <p class="mt-6 text-lg text-gray-600 leading-relaxed reveal">
+        Free Hotely app on your phone. Every guest message live, every QR scan, every experience
+        booked, every euro you earned. Take over from the AI in <b>one tap</b> any time you want.
+      </p>
+
+      <ul class="mt-7 space-y-2.5 text-gray-800 reveal">
+        <li class="flex items-center gap-3">
+          <span class="inline-flex w-6 h-6 rounded-full bg-primary/10 text-primary items-center justify-center text-xs font-bold shrink-0">✓</span>
+          <span>Live conversations — every chat in every apartment, in real time</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="inline-flex w-6 h-6 rounded-full bg-primary/10 text-primary items-center justify-center text-xs font-bold shrink-0">✓</span>
+          <span><b>Take over the AI</b> in one tap — type the reply yourself</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="inline-flex w-6 h-6 rounded-full bg-primary/10 text-primary items-center justify-center text-xs font-bold shrink-0">✓</span>
+          <span>Push notification on every booking &amp; commission earned</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="inline-flex w-6 h-6 rounded-full bg-primary/10 text-primary items-center justify-center text-xs font-bold shrink-0">✓</span>
+          <span>Dashboard: scans, bookings, revenue, languages, ratings</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="inline-flex w-6 h-6 rounded-full bg-primary/10 text-primary items-center justify-center text-xs font-bold shrink-0">✓</span>
+          <span>Cancel your subscription from here, 1 tap, no friction</span>
+        </li>
+      </ul>
+
+      <!-- App store buttons -->
+      <div class="mt-8 flex flex-wrap items-center gap-3 reveal">
+
+        <!-- Apple App Store -->
+        <a href="https://apps.apple.com/it/app/hotely/id6754984813" target="_blank" rel="noopener"
+           class="group inline-flex items-center gap-3 bg-gray-900 hover:bg-black text-white rounded-2xl px-5 py-3 transition-all hover:scale-[1.03] shadow-lg">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.05 12.66c-.03-3.04 2.49-4.5 2.6-4.57-1.42-2.07-3.62-2.36-4.4-2.39-1.87-.19-3.66 1.1-4.61 1.1-.96 0-2.42-1.07-3.99-1.04-2.05.03-3.95 1.19-5.01 3.02-2.13 3.7-.54 9.16 1.54 12.16 1.02 1.47 2.22 3.12 3.79 3.06 1.53-.06 2.11-.99 3.95-.99 1.84 0 2.36.99 3.98.96 1.65-.03 2.69-1.49 3.69-2.97 1.16-1.7 1.64-3.35 1.67-3.44-.04-.02-3.21-1.23-3.24-4.9zM14.62 4.36c.84-1.02 1.41-2.43 1.25-3.84-1.21.05-2.68.81-3.55 1.82-.78.9-1.46 2.34-1.28 3.72 1.35.1 2.74-.69 3.58-1.7z"/>
+          </svg>
+          <div class="text-left leading-tight">
+            <p class="text-[10px] uppercase tracking-wider opacity-80">Download on the</p>
+            <p class="text-lg font-semibold tracking-tight">App Store</p>
+          </div>
+        </a>
+
+        <!-- Google Play (TODO: replace href with real Play Store URL when live) -->
+        <a href="#" rel="noopener"
+           class="group inline-flex items-center gap-3 bg-gray-900 hover:bg-black text-white rounded-2xl px-5 py-3 transition-all hover:scale-[1.03] shadow-lg relative">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" aria-hidden="true">
+            <linearGradient id="gp1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#FFD400"/><stop offset="100%" stop-color="#FFB700"/>
+            </linearGradient>
+            <linearGradient id="gp2" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#FF3333"/><stop offset="100%" stop-color="#E60000"/>
+            </linearGradient>
+            <linearGradient id="gp3" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#00C7FF"/><stop offset="100%" stop-color="#0090FF"/>
+            </linearGradient>
+            <linearGradient id="gp4" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#00E676"/><stop offset="100%" stop-color="#00A859"/>
+            </linearGradient>
+            <path fill="url(#gp4)" d="M3.6 1.7 13.4 12 3.6 22.3c-.4-.2-.6-.6-.6-1.1V2.8c0-.5.2-.9.6-1.1z"/>
+            <path fill="url(#gp3)" d="m13.4 12-9.8 10.3c-.1 0-.1 0-.2-.1L17 14.4 13.4 12z"/>
+            <path fill="url(#gp1)" d="M20.6 10.8 17 12.8l-3.6-2.1L17 9.2l3.6 2c.7.4.7 1.2 0 1.6z" transform="translate(0 1.1)"/>
+            <path fill="url(#gp2)" d="m13.4 12 9.8-10.3c-.1-.1-.2-.1-.3-.1L17 9.6 13.4 12z"/>
+          </svg>
+          <div class="text-left leading-tight">
+            <p class="text-[10px] uppercase tracking-wider opacity-80">Get it on</p>
+            <p class="text-lg font-semibold tracking-tight">Google Play</p>
+          </div>
+          <span class="absolute -top-2 -right-2 bg-accent text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full shadow">Soon</span>
+        </a>
+      </div>
+
+      <p class="mt-4 text-xs text-gray-500 reveal">
+        Free with your $19.99/yr subscription · iOS 15+ &amp; Android 10+ · Built by the Hotely team in Italy 🇮🇹
+      </p>
+    </div>
+
+  </div>
+</section>
+
 <!-- ============== "AS SEEN IN THE REEL" ============== -->
 <section class="py-20 lg:py-24 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
